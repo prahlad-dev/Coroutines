@@ -20,10 +20,11 @@ class MainActivity : AppCompatActivity() {
         tv.setOnClickListener{
             lifecycleScope.launch {
                 while (true){
-                    delay(10L)
+                    delay(1000L)
                     Log.d(TAG, "GS1 is still running")
                 }
             }
+
             GlobalScope.launch {
                 delay(5000L)
                 Intent(this@MainActivity, SecondActivity::class.java).also {
