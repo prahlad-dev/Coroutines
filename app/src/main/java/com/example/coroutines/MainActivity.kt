@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         tv.setOnClickListener{
             lifecycleScope.launch {
                 while (true){
-                    delay(1000L)
+                    delay(10L)
                     Log.d(TAG, "GS1 is still running")
                 }
             }
